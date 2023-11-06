@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks/Feedbacks'
 import Referrels from './Referrels/Referrels'
 import TradeTogether from './TradeTogether/Tradetogether'
 import Visionaries from './Visionaries/Visionaries'
+import GetStartedNow from './GetStartedNow/GetStartedNow'
  
  
 const Hero = () => {
@@ -24,6 +25,7 @@ const Hero = () => {
         <Referrels/>
         <TradeTogether/>
         <Visionaries/>
+        <GetStartedNow/>
     </div>
   )
 }

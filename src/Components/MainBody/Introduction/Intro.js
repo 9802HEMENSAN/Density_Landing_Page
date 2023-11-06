@@ -9,7 +9,7 @@ const MainContainer = styled.div`
   align-items: center;
   gap: 76px;
   align-self: stretch;
-  background-color: black;
+  background-color: #000;
 `;
 
 const TextContainer = styled.div`

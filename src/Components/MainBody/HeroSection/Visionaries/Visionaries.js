@@ -145,8 +145,7 @@ const Visionaries = () => {
               src="https://framerusercontent.com/images/rpNXycRYwOL2fZ6QsuITaxNCvPo.png?scale-down-to=512"
               alt="Description 1"
             />
-       </Flexy>
-           
+       </Flexy>     
       </FlexBox>
       <Button>Join community</Button>
     </OuterBox>
