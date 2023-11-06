@@ -128,7 +128,7 @@ const FlexBoxInvestors = styled.div`
   align-self: stretch;
   flex-wrap: wrap;
   margin : auto;
-
+  width : 1200px;
 `;
 
 const CompanyImage = styled.img`

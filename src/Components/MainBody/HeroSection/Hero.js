@@ -5,6 +5,10 @@ import UnlockNewFrontiers from './Unlock/UnlockNewFrontiers'
 import StartSmall from './StartSmall/StartSmall'
 import Derivates from './DerivatesMadeSimple/Derivates'
 import BackedBytheBest from './BackedBytheBest/BackedBytheBest'
+import Feedbacks from './Feedbacks/Feedbacks'
+import Referrels from './Referrels/Referrels'
+import TradeTogether from './TradeTogether/Tradetogether'
+import Visionaries from './Visionaries/Visionaries'
  
  
 const Hero = () => {
@@ -16,6 +20,10 @@ const Hero = () => {
         <StartSmall/>
         <Derivates/>
         <BackedBytheBest />
+        <Feedbacks/>
+        <Referrels/>
+        <TradeTogether/>
+        <Visionaries/>
     </div>
   )
 }
