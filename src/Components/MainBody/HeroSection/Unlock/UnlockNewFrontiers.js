@@ -44,10 +44,7 @@ const FlexItem = styled.div`
   font-weight: 700;
   line-height: normal;
 `;
-
-const ThirdSection = styled.div`
-  /* Define styles for the third section */
-`;
+ 
 
 const Title = styled.h2`
   color: var(--electric-green-primary, #ebff25);
@@ -116,9 +113,9 @@ const UnlockNewFrontiers = () => {
           </FlexItem>
         </FlexBox>
       </SecondSection>
-      <ThirdSection>
+ 
         <Image src={graphical_data} alt="Description" />
-      </ThirdSection>
+ 
     </OuterBox>
   );
 };
