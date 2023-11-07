@@ -20,9 +20,8 @@ const NavbarContainer = styled.nav`
 `;
 
 const Logo = styled.img`
-  max-width: 100px;
-  width: 99.953px;
-  height: 24px;
+width: 99.953px;
+height: 24px;
 `;
 
 const Navbody = styled.div`

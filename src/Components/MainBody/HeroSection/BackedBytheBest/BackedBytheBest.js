@@ -124,11 +124,11 @@ const FlexBoxInvestors = styled.div`
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  gap: 40px;
+  gap: 18px;
   align-self: stretch;
   flex-wrap: wrap;
   margin : auto;
-  width : 1200px;
+  width : 75%;
 `;
 
 const CompanyImage = styled.img`
@@ -165,6 +165,7 @@ const InvestorDesignation = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
+  margin-top : -20px;
 `;
 
 const BackedBytheBest = () => {

@@ -43,10 +43,13 @@ const FlexBox = styled.div`
   justify-content : center;
   gap : 20px;
   align-self: stretch;
+  margin : 50px;
+  margin-top : -50px;
 `;
 
 const InnerDiv= styled.div`
-  padding : 0 50px;
+  padding : 50px;
+  background : #d1cfcd;
 `;
 
  

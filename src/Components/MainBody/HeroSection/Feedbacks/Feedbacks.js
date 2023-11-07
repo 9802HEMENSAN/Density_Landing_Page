@@ -43,8 +43,12 @@ const FlexBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin : auto;
   gap: 20px;
   align-self: stretch;
+  width : 90%;
+  padding :  20px;
+  padding-top : 20px;
 `;
 
 const Flexy = styled.div`
@@ -56,10 +60,16 @@ const Flexy = styled.div`
 const InnerDiv = styled.div`
   height: 450px;
   flex: 1 0 0;
+  background: #d1cfcd;
+  display : flex;
+  flex-direction: column;
+  justify-content : center;
+  align-items : space-around;
+  padding : 20px;
 `;
 
 const Image = styled.img`
-  width: 40%;
+  width: 50%;
 `;
 
 const BlockTitle = styled.h1`

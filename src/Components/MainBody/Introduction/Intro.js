@@ -26,6 +26,7 @@ const TextContainer = styled.div`
 
 const FirstLine = styled.div`
   display: block;
+  margin-top: -50px;
 `;
 const SecondLine = styled.div`
   display: block;
@@ -34,6 +35,7 @@ const SecondLine = styled.div`
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+  margin-top: -50px;
 `;
 
 const NormalText = styled.span`
@@ -46,50 +48,51 @@ const GradientText = styled.span`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 `;
 
 // Mobile Images
 const ImageContainer = styled.div`
-position: relative;
-display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 `;
 
 const CentralImage = styled.div`
   width: 329.935px;
   height: 668.698px;
   flex-shrink: 0;
-  background: url(${iphonecentre})
-    center / cover no-repeat;
+  background: url(${iphonecentre}) center / cover no-repeat;
   position: relative;
-  z-index: 100;
+  z-index: 10;
   box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
+  border-radius: 50px;
+  border: 10px solid black;
+ 
+  box-shadow: rgba(0, 160, 0, 0.56) 10px 102px 102px 0px;
+  outline: 1px solid white;
 `;
 
-const SmallerImageLeft = styled.div`
+const SideImage = styled.div`
   width: 261.338px;
   height: 529.668px;
   flex-shrink: 0;
-  background: url(${iphoneleft})
-    center / cover no-repeat;
-  position: absolute;
-  top: 50%;
-  left: -150px;  
-  transform: translateY(-50%);
-  z-index: 100;
-  box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
+  background: url(${iphoneleft}) center / cover no-repeat;
+  border-radius: 50px;
+  margin-right: -20px;
+  border: 10px solid black;
+  box-shadow: rgba(0, 160, 0, 0.96) 16px 22px 100px 22px;
+  outline: 1px solid white;
 `;
 
-const SmallerImageRight = styled.div`
-  width: 261.338px;
-  height: 529.668px;
-  background: url(${iphoneright})
-    center / cover no-repeat;
-  position: absolute;
-  top: 50%;
-  right: -150px;  
-  transform: translateY(-50%);
-  z-index: 100;
-  box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
+const RightImage = styled(SideImage)`
+  background: url(${iphoneright}) center / cover no-repeat;
+  border-radius: 50px;
+  margin-left: -20px;
+  border: 10px solid black;
+  box-shadow: rgba(0, 160, 0, 0.96) 16px 22px 100px 22px;
+  outline: 1px solid white;
 `;
 
 const Intro = () => {
@@ -107,15 +110,12 @@ const Intro = () => {
         Trade BTC, ETH Futures with 125x leverage and earn rewards.
       </SecondLine>
       <ImageContainer>
-        <CentralImage>
-          <SmallerImageLeft />
-          <SmallerImageRight />
-        </CentralImage>
+        <SideImage />
+        <CentralImage />
+        <RightImage />
       </ImageContainer>
     </MainContainer>
   );
 };
 
 export default Intro;
-
-
