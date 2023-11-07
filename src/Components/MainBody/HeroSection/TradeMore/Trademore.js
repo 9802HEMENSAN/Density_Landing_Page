@@ -1,26 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Density_logo from "../../../../images/density-logo.png";
 
-const data = [
-  {
-    image:
-      "https://framerusercontent.com/images/RGxoj1OWYnxPhEypnfPbyya0.png?scale-down-to=512",
-    Maker: "0.025",
-    Taker: "0.07",
-  },
-  {
-    image:
-      "https://framerusercontent.com/images/RGxoj1OWYnxPhEypnfPbyya0.png?scale-down-to=512",
-    Maker: "0.04",
-    Taker: "0.07",
-  },
-  {
-    image:
-      "https://framerusercontent.com/images/DNTQzRQMOU1ny1X7Xz3w4iHCBM.png?scale-down-to=512",
-    Maker: "0.02",
-    Taker: "0.05",
-  },
-];
 const OuterContainer = styled.div`
   display: flex;
   padding: 140px 0px;
@@ -88,9 +69,9 @@ const Item = styled.div`
     height: 30px;
     flex-shrink: 0;
   }
-  div{
-    display : flex;
-    align-items: center;  
+  div {
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
@@ -112,10 +93,27 @@ const Item = styled.div`
     line-height: normal;
     letter-spacing: -1.687px;
     opacity: 0.5;
+    margin-top: -10px;
   }
+`;
 
-  `;
- 
+const InnerDivMid = styled.div`
+  height: 438px;
+  background: rgb(227, 255, 107);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 107, 1) 0%,
+    rgba(208, 232, 131, 1) 1%,
+    rgba(119, 170, 27, 0.9809173669467787) 81%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex: 1 0 0;
+`;
+
 const TradeMore = () => {
   return (
     <OuterContainer>
@@ -125,23 +123,57 @@ const TradeMore = () => {
         <div>Our low Fees Supercharge Your Profits</div>
       </TopContents>
       <Contents>
-        {data.map((item, index) => (
-          <InnerDiv key={index}>
-            <Item>
-              <div>
-                <img src={item.image} alt={`Item ${index}`} />
-              </div>
-              <div>
-                <h2>{item.Maker}</h2>
-                <p>Item Maker</p>
-              </div>
-              <div>
-                <h2>{item.Taker}</h2>
-                <p>Item Taker</p>
-              </div>
-            </Item>
-          </InnerDiv>
-        ))}
+        <InnerDiv>
+          <Item>
+            <div>
+              <img
+                src="https://framerusercontent.com/images/RGxoj1OWYnxPhEypnfPbyya0.png?scale-down-to=512"
+                alt="CoinDCX"
+              />
+            </div>
+            <div>
+              <h2>0.025</h2>
+              <p>Maker Fees</p>
+            </div>
+            <div>
+              <h2>0.07</h2>
+              <p>Taker Fees</p>
+            </div>
+          </Item>
+        </InnerDiv>
+        <InnerDivMid>
+          <Item>
+            <div>
+              <img src={Density_logo} alt="density-logo" />
+            </div>
+            <div>
+              <h2>0.025</h2>
+              <p>Maker Fees</p>
+            </div>
+            <div>
+              <h2>0.07</h2>
+              <p>Taker Fees</p>
+            </div>
+          </Item>
+        </InnerDivMid>
+        <InnerDiv>
+          <Item>
+            <div>
+              <img
+                src="https://framerusercontent.com/images/DNTQzRQMOU1ny1X7Xz3w4iHCBM.png?scale-down-to=512"
+                alt="Delta Exchange"
+              />
+            </div>
+            <div>
+              <h2>0.025</h2>
+              <p>Maker Fees</p>
+            </div>
+            <div>
+              <h2>0.07</h2>
+              <p>Taker Fees</p>
+            </div>
+          </Item>
+        </InnerDiv>
       </Contents>
     </OuterContainer>
   );
