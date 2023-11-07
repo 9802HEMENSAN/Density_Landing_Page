@@ -26,7 +26,7 @@ const FlexBox = styled.div`
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
-  gap : 20px;
+  gap : 70px;
   background: rgba(16, 16, 16, 0.4);
   backdrop-filter: blur(26.25px);
 `;
@@ -77,14 +77,12 @@ const Button = styled.button`
 const Flexy = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  border: 1px solid #f0f0f0;
-  padding :  50px;
+  justify-content: space-around;
+  padding  : 20px;
 `;
 
 const Image = styled.img`
   width: 80%;
-  margin-left: 9%;
 `;
 
 const BlockTitle = styled.h1`
@@ -109,11 +107,11 @@ const Visionaries = () => {
       <FlexBox>
       <Flexy>
             <div>
-              <BlockTitle>
-                Prakash <br />
-                Jamtiya
+            <BlockTitle>
+               Aakash Neeraj<br />
+                Mittal
               </BlockTitle>
-              <Paragraph>Founder, Tradeshala</Paragraph>
+              <Paragraph>CEO, Density</Paragraph>
             </div>
             <Image
               src="https://framerusercontent.com/images/rpNXycRYwOL2fZ6QsuITaxNCvPo.png?scale-down-to=512"
@@ -123,26 +121,27 @@ const Visionaries = () => {
       <Flexy>
             <div>
               <BlockTitle>
-                Prakash <br />
-                Jamtiya
+                 Bhupendra<br />
+                 Bhule
               </BlockTitle>
-              <Paragraph>Founder, Tradeshala</Paragraph>
+              <Paragraph>CTO, Density</Paragraph>
+              
             </div>
             <Image
-              src="https://framerusercontent.com/images/rpNXycRYwOL2fZ6QsuITaxNCvPo.png?scale-down-to=512"
+              src="https://framerusercontent.com/images/4n8TnsDzZ83qgQQ4T8ls6EicHE.png?scale-down-to=512"
               alt="Description 1"
             />
        </Flexy>
       <Flexy>
             <div>
               <BlockTitle>
-                Prakash <br />
-                Jamtiya
+               Deepak<br />
+               Vasman
               </BlockTitle>
-              <Paragraph>Founder, Tradeshala</Paragraph>
+              <Paragraph>CBO, Density</Paragraph>
             </div>
             <Image
-              src="https://framerusercontent.com/images/rpNXycRYwOL2fZ6QsuITaxNCvPo.png?scale-down-to=512"
+              src="https://framerusercontent.com/images/5Sox37z0hcHue5OfRbADcxNU0w.png?scale-down-to=512"
               alt="Description 1"
             />
        </Flexy>     

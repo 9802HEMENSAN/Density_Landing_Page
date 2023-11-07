@@ -58,6 +58,7 @@ const TopContents = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 32.849px; /* 136.873% */
+    margin-top: 20px;
   }
 `;
 
@@ -67,6 +68,7 @@ const Contents = styled.div`
   align-items: center;
   gap: 20px;
   align-self: stretch;
+  margin: 0 60px;
 `;
 
 const InnerDiv = styled.div`
@@ -78,7 +80,6 @@ const InnerDiv = styled.div`
   align-items: center;
   color: white;
   flex: 1 0 0;
-  background: var(--neutrals-grey-9, #19191d);
 `;
 
 const Item = styled.div`
@@ -114,19 +115,12 @@ const Item = styled.div`
   }
 
   `;
-  // &:nth-child(2) {
-  //   width: 423.206px;
-  //   height: 548px;
-  //   flex-shrink: 0;
-  //   background: url(<https://framerusercontent.com/images/RGxoj1OWYnxPhEypnfPbyya0.png?scale-down-to=512>), lightgray 0% 0% / 64.93775248527527px 64.93775248527527px repeat;
-  //   mix-blend-mode: overlay;
-  // }
-
+ 
 const TradeMore = () => {
   return (
     <OuterContainer>
       <TopContents>
-        <span>Trade More </span>
+        <span>Trade More. </span>
         <span>Pay Less</span>
         <div>Our low Fees Supercharge Your Profits</div>
       </TopContents>

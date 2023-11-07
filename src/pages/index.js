@@ -1,6 +1,7 @@
 import * as React from "react"
 import Navbar from "../Components/Navbar/Navbar"
 import MainBody from "../Components/MainBody/MainBody"
+import Footer from "../Components/Footer/Footer"
 
  
 const IndexPage = () => {
@@ -8,6 +9,7 @@ const IndexPage = () => {
     <main>
       <Navbar/>
       <MainBody/>
+      <Footer/>
     </main>
   )
 }

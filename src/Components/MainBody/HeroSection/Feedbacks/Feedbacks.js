@@ -45,8 +45,8 @@ const FlexBox = styled.div`
   justify-content: space-evenly;
   gap: 20px;
   align-self: stretch;
- 
 `;
+
 const Flexy = styled.div`
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ const InnerDiv = styled.div`
 `;
 
 const Image = styled.img`
-  width: 50%;
+  width: 40%;
 `;
 
 const BlockTitle = styled.h1`
@@ -72,7 +72,9 @@ const BlockTitle = styled.h1`
 const Paragraph = styled.p`
   font-family: Neurial Grotesk;
   font-size: 20px;
-  margin-top: -10px;
+  width : 85%;
+  margin : auto;
+
 `;
 
  

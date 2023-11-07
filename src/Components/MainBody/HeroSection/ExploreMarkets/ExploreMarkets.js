@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import bitcoin_image  from "../../../../images/bitcoin_image.jpg"
+import ethereum_image  from "../../../../images/etherium.png"
 // Styled Components
 const OuterBox = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ const SubTitle = styled.p`
 `;
 
 const Image = styled.img`
-  /* Define styles for the image */
+  width : 95%;
 `;
 
 const ExploreButton = styled.button`
@@ -83,7 +83,7 @@ const ExploreMarkets = () => {
           Search for your favorite coins and stay ahead of the market
         </SubTitle>
       </TopBox>
-        <Image src={bitcoin_image} alt="Description" />
+        <Image src={ethereum_image} alt="Description" />
         <ExploreButton>Explore markets</ExploreButton>
       {/* Other sections/components within the OuterBox */}
     </OuterBox>

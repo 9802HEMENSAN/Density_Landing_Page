@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import mobile from "../../../../images/mobile.png";
 
 const OuterContainer = styled.div`
   display: flex;
@@ -10,6 +11,7 @@ const OuterContainer = styled.div`
   gap: 10px;
   align-self: stretch;
   background: #000;
+  margin-top: -120px;
 `;
 
 const GetStartedContainer = styled.div`
@@ -22,11 +24,13 @@ const Image = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width : 95%;
 `;
 
 const Heading1 = styled.h2`
   text-align: center;
   z-index: 1;
+  margin-bottom : 620px;
   font-family: Neurial Grotesk;
   font-size: 132.195px;
   font-style: normal;
@@ -68,6 +72,7 @@ const Button = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top : 400px;
 `;
 
 const GetStartedNow = () => {
@@ -76,8 +81,8 @@ const GetStartedNow = () => {
       <GetStartedContainer>
       <Heading1>Get Started Now</Heading1>
         <Image
-        src="https://framerusercontent.com/images/KkMEfdjlb56H5xZcSNAomLfYtOc.png?scale-down-to=512"
-        alt="image1"
+        src={mobile}
+        alt="mobile"
         />
         <Button>Start Trading!</Button>
       </GetStartedContainer>

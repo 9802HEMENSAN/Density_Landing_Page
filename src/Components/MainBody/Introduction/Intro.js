@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import iphoneleft from "../../../images/iphone_left.png";
+import iphoneright from "../../../images/iphone_right.png";
+import iphonecentre from "../../../images/iphone_centre.png";
 
 const MainContainer = styled.div`
   display: flex;
@@ -47,15 +50,15 @@ const GradientText = styled.span`
 
 // Mobile Images
 const ImageContainer = styled.div`
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 `;
 
 const CentralImage = styled.div`
   width: 329.935px;
   height: 668.698px;
   flex-shrink: 0;
-  background: url("https://framerusercontent.com/images/s7Sjy3hDk306BJLPPjGkcOiPhQ.png?scale-down-to=512")
+  background: url(${iphonecentre})
     center / cover no-repeat;
   position: relative;
   z-index: 100;
@@ -66,26 +69,26 @@ const SmallerImageLeft = styled.div`
   width: 261.338px;
   height: 529.668px;
   flex-shrink: 0;
-  background: url("https://framerusercontent.com/images/Pa7GzCqbrmaKMjNDT5klTyHUI.png?scale-down-to=512")
+  background: url(${iphoneleft})
     center / cover no-repeat;
   position: absolute;
   top: 50%;
-  left: -150px; /* Adjust the position as needed */
+  left: -150px;  
   transform: translateY(-50%);
-  z-index: -1;
+  z-index: 100;
   box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
 `;
 
 const SmallerImageRight = styled.div`
   width: 261.338px;
   height: 529.668px;
-  background: url("https://framerusercontent.com/images/KkMEfdjlb56H5xZcSNAomLfYtOc.png?scale-down-to=1024")
+  background: url(${iphoneright})
     center / cover no-repeat;
   position: absolute;
   top: 50%;
-  right: -150px; /* Adjust the position as needed */
+  right: -150px;  
   transform: translateY(-50%);
-  z-index: -1;
+  z-index: 100;
   box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
 `;
 
@@ -112,4 +115,7 @@ const Intro = () => {
     </MainContainer>
   );
 };
+
 export default Intro;
+
+

@@ -35,15 +35,13 @@ const Navbody = styled.div`
 const NavLinks = styled.ul`
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 `;
 
 const NavLink = styled.li`
   margin-right: 20px;
   color: #fcfcfc;
   font-family: Neurial Grotesk;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
