@@ -56,29 +56,34 @@ const SecondSection = styled.div`
 `;
 
 const FlexBox = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
   background: rgba(16, 16, 16, 0.4);
-  backdrop-filter: blur(26.25px);
-  margin: 82px;
-  gap: 100px;
+  backdrop-filter: blur(26.25px); 
 
   @media (min-width: 641px) and (max-width: 1007px) {
     margin: 42px;
     flex-direction: column;
+    width: 90%;
   }
 
   @media (min-width: 200px) and (max-width: 640px) {
-    margin: 22px;
+    margin: 12px;
     padding: 10px;
     flex-direction: column;
+    width: 90%;
   }
 `;
 
 const FlexItem = styled.div`
+  display : flex; 
+  flex-direction : column;
+  justify-content : space-evenly;
+  align-items :  center;
+  gap : 10px;  
   color: var(--White, #fff);
   text-align: center;
   font-family: Neurial Grotesk;
@@ -86,8 +91,10 @@ const FlexItem = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  min-width : 300px;
+  margin : auto;
 
-  h3 {
+  div {
     color: var(--White, #fff);
     font-family: Neurial Grotesk;
     font-size: 32px;
@@ -95,14 +102,30 @@ const FlexItem = styled.div`
     font-weight: 700;
     line-height: 40px; /* 125% */
     letter-spacing: -1px;
+    margin : 20px;
   }
 
   @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 28px;
+    flex-direction : row;
+    gap : 20px;
+    padding : 20px;
+    width : 100%;
+
+    div {
+      font-size: 28px;
+    }
   }
 
   @media (min-width: 200px) and (max-width: 640px) {
     font-size: 24px;
+    flex-direction : row;
+    gap : 20px;
+    padding : 20px;
+
+    div {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -164,19 +187,9 @@ const HeroImage = styled.img`
   }
 `;
 const Image = styled.img`
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
-
-  @media (min-width: 641px) and (max-width: 1007px) {
-    width: 80px;
-    height: 80px;
-  }
-
-  @media (min-width: 200px) and (max-width: 640px) {
-    width: 60px;
-    height: 60px;
-  }
+  width: 150px;
+  height: 130px;
+  flex-shrink: 0; 
 `;
 
 const CenteralImage = styled.div`
@@ -255,18 +268,18 @@ const Referrels = () => {
                 src="https://framerusercontent.com/images/7aKKvEZCSVRFsDSyHuluqzNp1RQ.png?scale-down-to=512"
                 alt="image1"
               />
-              <h3>
+              <div>
                 Share your <br /> referrel link
-              </h3>
+              </div>
             </FlexItem>
             <FlexItem>
               <Image
                 src="https://framerusercontent.com/images/7aKKvEZCSVRFsDSyHuluqzNp1RQ.png?scale-down-to=512"
                 alt="image1"
               />
-              <h3>
+              <div>
                 Invite Friends to <br /> Trade on
-              </h3>
+              </div>
             </FlexItem>
             <FlexItem>
               {" "}
@@ -274,9 +287,10 @@ const Referrels = () => {
                 src="https://framerusercontent.com/images/7aKKvEZCSVRFsDSyHuluqzNp1RQ.png?scale-down-to=512"
                 alt="image1"
               />
-              <h3>
-                Trade <br /> and Earn
-              </h3>
+              <div>
+                Trade    
+                <br /> and Earn
+              </div>
             </FlexItem>
           </FlexBox>
         </SecondSection>

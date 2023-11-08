@@ -72,6 +72,7 @@ const FlexBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  align-self: stretch;
   margin: auto;
   gap: 20px;
   align-self: stretch;
@@ -92,34 +93,36 @@ const FlexBox = styled.div`
 
 const Flexy = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  align-self: stretch;
-  gap: 20px;
+  align-items: center;  
+  justify-content: space-between;
+  align-self: stretch; 
 `;
 
 const Founder = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  flex-direction: column;   
+  align-self: flex-start;  
+  margin : auto; 
 `;
 
 const InnerDiv = styled.div`
   background: #d1cfcd;
   padding: 20px;
   min-width : 300px;
-  max-width : 500px;
+  max-width : 500px; 
 
   @media (min-width: 641px) and (max-width: 1007px) {
     height: auto;
-    padding: 10px;
+    padding: 40px; 
   }
 
   @media (min-width: 200px) and (max-width: 640px) {
+    display : flex;
+    flex-direction: column;
+    align-items: space-evenly;
     height: auto;
-    padding: 10px;
-    gap: 50px;
+    padding: 10px;  
+    gap : 20px 10px;
   }
 `;
 
@@ -163,6 +166,7 @@ const Paragraph = styled.p`
 
   @media (min-width: 200px) and (max-width: 640px) {
     font-size: 18px;
+    padding : 20px 0px;
   }
 `;
 

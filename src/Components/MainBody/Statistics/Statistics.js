@@ -10,6 +10,7 @@ const OutermostContainer = styled.div`
   gap: 10px;
   align-self: stretch;
   background-color: #000;
+  padding : 50px;
 `;
 
 const StatisticsContainer = styled.div`
@@ -23,6 +24,8 @@ const StatisticsContainer = styled.div`
   box-shadow: 0px 0px 10px 0px rgba(235, 255, 37, 0.20);
   backdrop-filter: blur(26.25px);   
   padding : 50px 50px;
+  margin : 100px 0px;
+  gap : 20px;
 
   @media (min-width: 641px) and (max-width: 1007px) {
     gap: 10px;
@@ -33,7 +36,8 @@ const StatisticsContainer = styled.div`
   @media (min-width: 200px) and (max-width: 640px) {
     flex-direction: column;
     align-items: space-evenly;
-    height : 500px;
+    justify-content: center;
+    min-height : 600px;
     gap: 5px;
     border: none;
     box-shadow: none;

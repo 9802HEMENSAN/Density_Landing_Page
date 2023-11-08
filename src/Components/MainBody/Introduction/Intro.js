@@ -96,6 +96,16 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+ 
+  @media (min-width: 641px) and (max-width: 1007px) {
+    flex-direction: column;
+    gap : 20px
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+     flex-direction: column;
+     gap : 20px
+  }
 `;
 
 const CentralImage = styled.div`
@@ -112,8 +122,13 @@ const CentralImage = styled.div`
   box-shadow: rgba(0, 160, 0, 0.56) 10px 102px 102px 0px;
   outline: 1px solid white;
 
-  @media (min-width: 300px) and (max-width: 640px) {
-    border-width: 5px;
+   
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    border-width: 5px; 
+    width: 329.935px;
+    height: 608.698px;
+    display : none;
   }
 `;
 
@@ -126,25 +141,30 @@ const SideImage = styled.div`
   margin-right: -20px;
   border: 10px solid black;
   box-shadow: rgba(0, 160, 0, 0.96) 16px 22px 100px 22px;
-  outline: 1px solid white;
+  outline: 1px solid white;  
 
-  @media (min-width: 300px) and (max-width: 640px) {
-    border-width: 5px;
-    margin-right: -5px;
+  @media (min-width: 641px) and (max-width: 1007px) { 
+    display : none;
   }
+   
 `;
 
 const RightImage = styled(SideImage)`
+  width: 261.338px;
+  height: 529.668px;
   background: url(${iphoneright}) center / cover no-repeat;
   border-radius: 50px;
   margin-left: -20px;
   border: 10px solid black;
   box-shadow: rgba(0, 160, 0, 0.96) 16px 22px 100px 22px;
-  outline: 1px solid white;
+  outline: 1px solid white;  
 
-  @media (min-width: 300px) and (max-width: 640px) {
-    border-width: 5px;
-    margin-left: -5px;
+  @media (min-width: 641px) and (max-width: 1007px) { 
+    display : none;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) { 
+    display : none;
   }
 `;
 
