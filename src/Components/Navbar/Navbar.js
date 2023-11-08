@@ -7,8 +7,7 @@ const NavbarContainer = styled.nav`
   display: flex;
   padding: 24px 216px;
   justify-content: center;
-  align-items: center;
-  gap: 100px;
+  align-items: center; 
   align-self: stretch;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -31,6 +30,7 @@ const Logo = styled.img`
     height: 24px;
 `
 const Navbody = styled.div`
+  min-width: 300px;
   width : 90%;
   display: flex;
   justify-content:  space-between;
