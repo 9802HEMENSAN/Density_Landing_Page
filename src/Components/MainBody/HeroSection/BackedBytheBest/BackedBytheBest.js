@@ -84,6 +84,7 @@ const Investors = [
 ];
 
 const OuterBox = styled.div`
+  
   display: flex;
   padding: 140px 0px;
   flex-direction: column;
@@ -91,6 +92,17 @@ const OuterBox = styled.div`
   gap: 82px;
   align-self: stretch;
   background-color: #000;
+  padding : 200px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 50px;
+    padding: 100px 0px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 40px;
+    padding: 160px 10px; 
+  }
 `;
 
 const Title = styled.h1`
@@ -100,26 +112,48 @@ const Title = styled.h1`
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
-  line-height: 76.882px; /* 106.78% */
+  line-height: 76.882px;  
   letter-spacing: -2.097px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 36px;
+  }
 `;
 
 const FlexBoxCompanies = styled.div`
+  width : 70%;
   display: flex;
-  width: 1000px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
-  gap: 80px;
+  gap: 18px;
   flex-wrap: wrap;
+  margin : auto;
+  align-self: stretch;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 30px;
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 const FlexBoxInvestors = styled.div`
+  width : 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -128,20 +162,43 @@ const FlexBoxInvestors = styled.div`
   align-self: stretch;
   flex-wrap: wrap;
   margin : auto;
-  width : 75%;
+  padding : 10%;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 const CompanyImage = styled.img`
   width: 185px;
   height: 50px;
+  margin : 30px;
+  
+  @media (min-width: 641px) and (max-width: 1007px) {
+    width: 120px;
+    height: 40px;
+    margin : 20px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    width: 90px;
+    height: 30px;
+  }
 `;
 
 const InvestorCard = styled.div`
+  min-width : 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding-left : 50px;
+  gap: 16px; 
 `;
 
 const InvestorImage = styled.img`

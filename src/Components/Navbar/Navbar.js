@@ -17,11 +17,26 @@ const NavbarContainer = styled.nav`
   background: rgba(42, 93, 50, 0.2);
   backdrop-filter: blur(20px);
   background-color: #000000;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 24px 10px;
+    gap: 10px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 24px 50px;
+    gap: 30px;
+    flex-direction: column;
+  }
 `;
 
 const Logo = styled.img`
 width: 99.953px;
 height: 24px;
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  width: 150px;
+}
 `;
 
 const Navbody = styled.div`
@@ -30,20 +45,34 @@ const Navbody = styled.div`
   align-items: center;
   gap: 56px;
   color: #fcfcfc;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 25px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 15px;
+    flex-direction: column;
+  }
 `;
 const NavLinks = styled.ul`
   display: flex;
   list-style: none;
+  padding: 0;
 `;
 
 const NavLink = styled.li`
   margin-right: 20px;
-  color: #fcfcfc;
+  color: #FCFCFC;
   font-family: Neurial Grotesk;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = styled.button`
@@ -66,6 +95,12 @@ const Button = styled.button`
   background: linear-gradient(86deg, #d4f938 23.09%, #32d875 108.69%);
   box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
   backdrop-filter: blur(5px);
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 16px;
+    padding: 0 25px;
+    height: 54px;
+  }
 `;
 
 const Navbar = () => {
@@ -98,3 +133,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

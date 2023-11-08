@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import graphical_data from "../../../../images/graphical_data.png";
 
 const OuterBox = styled.div`
   display: flex;
@@ -10,6 +9,15 @@ const OuterBox = styled.div`
   gap: 64px;
   align-self: stretch;
   background-color: #000;
+  
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 100px 0;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 80px 0;
+  }
 `;
 
 const FirstSection = styled.div`
@@ -17,22 +25,57 @@ const FirstSection = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 28px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 16px;
+
+    span {
+      display: block;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 12px;
+
+    span {
+      display: block;
+    }
+  }
 `;
 
 const SecondSection = styled.div`
   margin: auto;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    margin: 0 auto;
+  }
 `;
 
 const FlexBox = styled.div`
+  width: 80%;
   display: flex;
-  width: 1140px;
-  height: 171px;
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
   background: rgba(16, 16, 16, 0.4);
   backdrop-filter: blur(26.25px);
   margin: 82px;
+  gap: 100px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    margin: 42px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    margin: 22px;
+    padding: 10px;
+    flex-direction: column;
+  }
 `;
 
 const FlexItem = styled.div`
@@ -43,6 +86,24 @@ const FlexItem = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  h3 {
+    color: var(--White, #fff);
+    font-family: Neurial Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    letter-spacing: -1px;
+  }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 24px;
+  }
 `;
 
 const Title = styled.h2`
@@ -58,6 +119,14 @@ const Title = styled.h2`
   span {
     color: var(--White, #fff);
   }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 36px;
+  }
 `;
 
 const Description = styled.p`
@@ -69,17 +138,45 @@ const Description = styled.p`
   font-weight: 400;
   line-height: 32.849px;
   margin-top: -50px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 16px;
+  }
 `;
 
 const HeroImage = styled.img`
   width: 200px;
   height: 200px;
   flex-shrink: 0;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    width: 160px;
+    height: 160px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 const Image = styled.img`
   width: 100px;
   height: 100px;
   flex-shrink: 0;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    width: 60px;
+    height: 60px;
+  }
 `;
 
 const CenteralImage = styled.div`
@@ -88,6 +185,16 @@ const CenteralImage = styled.div`
   justify-content: center;
   height: 50px;
   width: 50px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    height: 40px;
+    width: 40px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    height: 30px;
+    width: 30px;
+  }
 `;
 
 const Button = styled.button`
@@ -108,6 +215,18 @@ const Button = styled.button`
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 16px;
+    padding: 20px 40px;
+    height: 40px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 14px;
+    padding: 16px 32px;
+    height: 32px;
+  }
 `;
 
 const Referrels = () => {

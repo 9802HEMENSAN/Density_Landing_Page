@@ -13,6 +13,16 @@ const MainContainer = styled.div`
   gap: 76px;
   align-self: stretch;
   background-color: #000;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 40px 0px 80px 0px;
+    margin : auto;
+    width : 100%;
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    padding: 20px 0px 40px 0px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -22,11 +32,30 @@ const TextContainer = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 77px;
+ 
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    font-size: 44px;
+   
+  }
 `;
 
 const FirstLine = styled.div`
   display: block;
   margin-top: -50px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    margin-top: -10px;
+  }
 `;
 const SecondLine = styled.div`
   display: block;
@@ -36,6 +65,17 @@ const SecondLine = styled.div`
   line-height: normal;
   text-transform: capitalize;
   margin-top: -50px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    margin-top: -20px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    text-align: center;
+    font-size: 16px;
+    text-align: center;
+  }
 `;
 
 const NormalText = styled.span`
@@ -48,7 +88,6 @@ const GradientText = styled.span`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 `;
 
 // Mobile Images
@@ -72,6 +111,10 @@ const CentralImage = styled.div`
  
   box-shadow: rgba(0, 160, 0, 0.56) 10px 102px 102px 0px;
   outline: 1px solid white;
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    border-width: 5px;
+  }
 `;
 
 const SideImage = styled.div`
@@ -84,6 +127,11 @@ const SideImage = styled.div`
   border: 10px solid black;
   box-shadow: rgba(0, 160, 0, 0.96) 16px 22px 100px 22px;
   outline: 1px solid white;
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    border-width: 5px;
+    margin-right: -5px;
+  }
 `;
 
 const RightImage = styled(SideImage)`
@@ -93,6 +141,11 @@ const RightImage = styled(SideImage)`
   border: 10px solid black;
   box-shadow: rgba(0, 160, 0, 0.96) 16px 22px 100px 22px;
   outline: 1px solid white;
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    border-width: 5px;
+    margin-left: -5px;
+  }
 `;
 
 const Intro = () => {

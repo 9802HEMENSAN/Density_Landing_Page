@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import prakash from "../../../../images/prakash_jamatia.png"
-import arjun_naik from "../../../../images/arjun_naik.png"
-import Shambhavi_Nayak from "../../../../images/Shambhavi_Nayak.png"
+import prakash from "../../../../images/prakash_jamatia.png";
+import arjun_naik from "../../../../images/arjun_naik.png";
+import Shambhavi_Nayak from "../../../../images/Shambhavi_Nayak.png";
 
- 
 const OuterBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,6 +13,16 @@ const OuterBox = styled.div`
   align-self: stretch;
   background: var(--White, #fff);
   margin-top: -120px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 32px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 20px;
+    margin-top: -15px;
+    word-wrap: break-word;
+  }
 `;
 
 const FirstSection = styled.div`
@@ -31,11 +40,31 @@ const FirstSection = styled.div`
     color: var(--neutrals-grey-8, #32333a);
     text-align: center;
     font-family: Neurial Grotesk;
-    font-size: 22.366px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 32.849px;
     margin-top: -35px;
+  }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    h2 {
+      font-size: 72px;
+    }
+    p {
+      font-size: 34px;
+      margin-top: -20px;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 19px;
+      margin-top: -20;
+    }
   }
 `;
 
@@ -43,33 +72,67 @@ const FlexBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin : auto;
+  margin: auto;
   gap: 20px;
   align-self: stretch;
-  width : 90%;
-  padding :  20px;
-  padding-top : 20px;
+  padding: 20px;
+  padding-top: 20px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 16px;
+    flex-wrap : wrap;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    gap: 12px;
+    padding: 10px;
+    flex-direction: column;
+  }
 `;
 
 const Flexy = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-self: stretch;
+  gap: 20px;
+`;
+
+const Founder = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 `;
 
 const InnerDiv = styled.div`
-  height: 450px;
-  flex: 1 0 0;
   background: #d1cfcd;
-  display : flex;
-  flex-direction: column;
-  justify-content : center;
-  align-items : space-around;
-  padding : 20px;
+  padding: 20px;
+  min-width : 300px;
+  max-width : 500px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    height: auto;
+    padding: 10px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    height: auto;
+    padding: 10px;
+    gap: 50px;
+  }
 `;
 
 const Image = styled.img`
   width: 50%;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    width: 40%;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    width: 30%;
+  }
 `;
 
 const BlockTitle = styled.h1`
@@ -77,17 +140,31 @@ const BlockTitle = styled.h1`
   font-size: 32px;
   font-weight: 700;
   margin-top: -40px;
+  text-align: left;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 20px;
+  }
 `;
 
 const Paragraph = styled.p`
   font-family: Neurial Grotesk;
   font-size: 20px;
-  width : 85%;
-  margin : auto;
+  width: 85%;
+  margin-top: -10px;
 
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 18px;
+  }
 `;
-
- 
 
 const Feedbacks = () => {
   return (
@@ -108,17 +185,14 @@ const Feedbacks = () => {
             have to say, it definitely lived up to my expectations.
           </Paragraph>
           <Flexy>
-            <div>
+            <Founder>
               <BlockTitle>
                 Prakash <br />
                 Jamtiya
               </BlockTitle>
               <Paragraph>Founder, Tradeshala</Paragraph>
-            </div>
-            <Image
-              src={prakash}
-              alt="Description 1"
-            />
+            </Founder>
+            <Image src={prakash} alt="Description 1" />
           </Flexy>
         </InnerDiv>
         <InnerDiv>
@@ -127,19 +201,16 @@ const Feedbacks = () => {
             excited to try out Density's crypto futures trading platform. And I
             have to say, it definitely lived up to my expectations.
           </Paragraph>
-          <FlexBox>
-            <div>
+          <Flexy>
+            <Founder>
               <BlockTitle>
-                 Shambhavi <br />
+                Shambhavi <br />
                 Nayak
               </BlockTitle>
               <Paragraph>Commodity Trader</Paragraph>
-            </div>
-            <Image
-              src={Shambhavi_Nayak }
-              alt="Description 1"
-            />
-          </FlexBox>
+            </Founder>
+            <Image src={Shambhavi_Nayak} alt="Description 1" />
+          </Flexy>
         </InnerDiv>
         <InnerDiv>
           <Paragraph>
@@ -147,22 +218,18 @@ const Feedbacks = () => {
             excited to try out Density's crypto futures trading platform. And I
             have to say, it definitely lived up to my expectations.
           </Paragraph>
-          <FlexBox>
-            <div>
+          <Flexy>
+            <Founder>
               <BlockTitle>
-                 Arjun <br />
-                 Naik
+                Arjun <br />
+                Naik
               </BlockTitle>
               <Paragraph>Equity Trader</Paragraph>
-            </div>
-            <Image
-              src={arjun_naik}
-              alt="Description 1"
-            />
-          </FlexBox>
+            </Founder>
+            <Image src={arjun_naik} alt="Description 1" />
+          </Flexy>
         </InnerDiv>
       </FlexBox>
-   
     </OuterBox>
   );
 };

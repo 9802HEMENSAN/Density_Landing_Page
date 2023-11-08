@@ -12,6 +12,10 @@ const OuterContainer = styled.div`
   align-self: stretch;
   background: #000;
   margin-top: -120px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 100px 0;
+  }
 `;
 
 const GetStartedContainer = styled.div`
@@ -24,7 +28,16 @@ const Image = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width : 95%;
+  width : 55%;
+  margin-top : 100px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    width : 100%;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    width : 100%;
+  }
 `;
 
 const Heading1 = styled.h2`
@@ -45,6 +58,16 @@ const Heading1 = styled.h2`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 64px;
+    word-wrap: break-word;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 64px;
+    word-wrap: break-word;
+  }
 `;
 
 const Button = styled.button`
@@ -54,8 +77,7 @@ const Button = styled.button`
   transform: translate(-50%, -50%);
   z-index: 2;
   display: flex;
-  width: 866.226px;
-  height: 134.978px;
+  width: 80%;
   padding: 11.132px 33.397px;
   justify-content: center;
   align-items: center;
@@ -72,7 +94,15 @@ const Button = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top : 400px;
+  margin-top : 450px ;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 24px;
+  }
 `;
 
 const GetStartedNow = () => {

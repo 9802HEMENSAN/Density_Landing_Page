@@ -13,8 +13,8 @@ const OutermostContainer = styled.div`
 `;
 
 const StatisticsContainer = styled.div`
+  width : 90%;
   display: flex;
-  height: 171px;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -22,9 +22,28 @@ const StatisticsContainer = styled.div`
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 10px 0px rgba(235, 255, 37, 0.20);
   backdrop-filter: blur(26.25px);   
+  padding : 50px 50px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 10px;
+    border: none;
+    padding : 30px 30px; 
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    flex-direction: column;
+    align-items: space-evenly;
+    height : 500px;
+    gap: 5px;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none; 
+    padding : 20px 20px;
+  }
 `;
 
 const SingleData = styled.div`
+  width : 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +51,19 @@ const SingleData = styled.div`
   box-shadow: 0px 0px 10px 0px rgba(235, 255, 37, 0.2);
   gap: 4px;
   flex: 1 0 0;
+  padding : 5%;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    gap: 8px;
+    width : 80%; 
+    padding : 5%;
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    gap: 4px;
+    width : 100%; 
+    padding : 5%;
+  }
 `;
 
 const StatisticData = styled.div`
@@ -41,6 +73,14 @@ const StatisticData = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    font-size: 28px;
+  }
 `;
 
 const StatisticText = styled.div`
@@ -50,6 +90,16 @@ const StatisticText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 300px) and (max-width: 640px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;
 
 const Data = [

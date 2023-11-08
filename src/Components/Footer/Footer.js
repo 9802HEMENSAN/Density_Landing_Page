@@ -4,16 +4,28 @@ import styled from "styled-components";
 const FooterContainer = styled.footer`
   background: #229851;
   display: flex;
-  padding: 63px 245px;
+  padding: 63px 5px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   align-self: stretch;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 100px 0;
+  }
+
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 80px 0;
+  }
 `;
 
-const DensityImage = styled.img`
-   
+const DensityImage = styled.div`
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin : auto;
 `;
 
 const FlexBox = styled.div`
@@ -26,6 +38,18 @@ const List = styled.ul`
   justify-content: space-between;
   list-style-type: none;
   gap: 28px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const ListItem = styled.li`
@@ -41,34 +65,42 @@ const Paragraph = styled.p`
   color: #ddd;
   text-align: center;
   font-family: Neurial Grotesk;
-  font-size: 13.998px;
+  font-size:  17px;
   font-style: normal;
   font-weight: 400;
   line-height: 23.996px; /* 171.429% */
-  width: 786.88px;
+  word-wrap: break-word;
+  width : 60%;  
+  
 `;
 
 const SocialMediaIcons = styled.div`
   display: flex;
-  padding: 63px 245px;
+  padding: 63px;
   justify-content: center;
   align-items: center;
   gap: 40px;
   align-self: stretch;
   background: #229851;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    justify-content:  space-evenly;
+    align-items: center;
+    padding: 0px 200px ;
+    gap: 0px;
+  }
+
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 0 80px  
+  }
 `;
 
 const Footer = () => {
-  const socialMedia = [
-    "https://example.com/facebook.png",
-    "https://example.com/apple.png",
-    "https://example.com/amazon.png",
-    "https://example.com/google.png",
-  ];
-
+  
   return (
     <FooterContainer>
-      {/* <DensityImage src="" alt="Density" /> */}
+     <DensityImage> 
       <svg xmlns="http://www.w3.org/2000/svg" width="128" height="31" viewBox="0 0 128 31" fill="none">
   <path d="M2.53899 5.54785H0.633957C0.473714 5.54785 0.343811 5.67892 0.343811 5.84061V7.76282C0.343811 7.9245 0.473714 8.05558 0.633957 8.05558H2.53899C2.69924 8.05558 2.82914 7.9245 2.82914 7.76282V5.84061C2.82914 5.67892 2.69924 5.54785 2.53899 5.54785Z" fill="white"/>
   <path d="M5.97653 5.54785H4.12303C3.96269 5.54785 3.83289 5.67882 3.83289 5.84061V7.76282C3.83289 7.92461 3.96269 8.05558 4.12303 8.05558H5.97653C6.16551 8.05558 6.31821 7.90149 6.31821 7.71081V5.89454C6.31821 5.70386 6.16551 5.54978 5.97653 5.54978V5.54785Z" fill="white"/>
@@ -138,6 +170,7 @@ const Footer = () => {
   <path d="M104.281 19.3666C104.281 22.2858 105.42 23.6806 108.611 23.6806H111.509V21.2479H108.872C107.439 21.2479 106.951 20.7289 106.951 19.3341V9.57071H111.249V7.13797H106.951V2.49955H104.281V7.13797H101.285V9.57071H104.281V19.3666Z" fill="white"/>
   <path d="M118.409 23.7779L117.595 25.789C116.976 27.3459 116.716 27.7352 115.186 27.7352H112.809V30.1679H116C118.344 30.1679 118.963 29.13 120.005 26.4702L127.656 7.13797H124.824L119.874 20.3397L114.762 7.13797H111.93L118.409 23.7779Z" fill="white"/>
      </svg>
+     </DensityImage>
       <FlexBox>
         <List>
           <ListItem>Blog</ListItem>

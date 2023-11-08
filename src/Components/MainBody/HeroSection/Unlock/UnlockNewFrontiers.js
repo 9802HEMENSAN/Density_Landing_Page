@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import graphical_data from "../../../../images/graphical_data.png"
+import graphical_data from "../../../../images/graphical_data.png";
 
 const OuterBox = styled.div`
   display: flex;
@@ -10,6 +10,15 @@ const OuterBox = styled.div`
   gap: 64px;
   align-self: stretch;
   background-color: #000;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 200px 0;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 260px 30px;
+    gap: 30px;
+  }
 `;
 
 const FirstSection = styled.div`
@@ -20,19 +29,35 @@ const FirstSection = styled.div`
 `;
 
 const SecondSection = styled.div`
-   margin : auto;
+  margin: auto;
 `;
 
 const FlexBox = styled.div`
   display: flex;
-  width: 1140px;
-  height: 171px;
+  width:  95%;
+  padding : 50px;
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(16, 16, 16, 0.4);
   backdrop-filter: blur(26.25px);
+  gap : 50px;
+
+
+  @media (min-width: 641px) and (max-width: 1007px) { 
+    align-items: center;
+    justify-content: center; 
+    gap : 40px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    margin : auto;
+    gap : 40px;
+  }
 `;
 
 const FlexItem = styled.div`
@@ -43,8 +68,16 @@ const FlexItem = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 18px;
+  }
 `;
- 
 
 const Title = styled.h2`
   color: var(--electric-green-primary, #ebff25);
@@ -59,9 +92,17 @@ const Title = styled.h2`
   span {
     color: var(--White, #fff);
   }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 40px;
+  }
 `;
 
-const Description = styled.p`
+const Description = styled.div`
   color: var(--neutrals-grey-4, #e7e7ea);
   text-align: center;
   font-family: Neurial Grotesk;
@@ -73,10 +114,20 @@ const Description = styled.p`
 `;
 
 const Image = styled.img`
-width: 1130px;
-height: 510px;
-flex-shrink: 0;
+  width: 80%;
+  height: 100%;
+  flex-shrink: 0;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    width: 60%;
+    height: 50%;
  
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    width: 100%;
+    height: 100%; 
+  }
 `;
 
 const UnlockNewFrontiers = () => {
@@ -88,7 +139,7 @@ const UnlockNewFrontiers = () => {
           <span>Unlock</span> New Frontiers.
         </Title>
         <Description>
-          Are you a stock trader looking for new opportunities to make <br />{" "}
+          Are you a stock trader looking for new opportunities to make <br />
           money? We got you covered!
         </Description>
       </FirstSection>
@@ -113,9 +164,8 @@ const UnlockNewFrontiers = () => {
           </FlexItem>
         </FlexBox>
       </SecondSection>
- 
-        <Image src={graphical_data} alt="Description" />
- 
+
+      <Image src={graphical_data} alt="Description" />
     </OuterBox>
   );
 };

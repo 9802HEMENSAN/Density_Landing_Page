@@ -10,6 +10,15 @@ const OuterContainer = styled.div`
   gap: 82px;
   align-self: stretch;
   background-color: #000;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 100px 0;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 60px 30px;
+    gap: 30px;
+  }
 `;
 
 const TopContents = styled.div`
@@ -41,15 +50,51 @@ const TopContents = styled.div`
     line-height: 32.849px; /* 136.873% */
     margin-top: 20px;
   }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    span {
+      font-size: 50px;
+      margin : auto;
+    }
+    div {
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    span {
+      font-size: 40px;
+      line-height: 50px;
+      margin : auto;
+    }
+    div {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 5px;
+    }
+  }
 `;
 
 const Contents = styled.div`
+  width : 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  align-self: stretch;
   margin: 0 60px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    flex-direction: column;
+    font-size: 12px;
+    gap: 40px; 
+  }
 `;
 
 const InnerDiv = styled.div`
@@ -61,11 +106,13 @@ const InnerDiv = styled.div`
   align-items: center;
   color: white;
   flex: 1 0 0;
+  padding : 20px;
+  width : 80%;
 `;
 
 const Item = styled.div`
+  
   img {
-    width: 146px;
     height: 30px;
     flex-shrink: 0;
   }
@@ -98,6 +145,7 @@ const Item = styled.div`
 `;
 
 const InnerDivMid = styled.div`
+  width : 80%;
   height: 438px;
   background: rgb(227, 255, 107);
   background: linear-gradient(

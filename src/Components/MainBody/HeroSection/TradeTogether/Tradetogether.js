@@ -11,39 +11,126 @@ const OuterBox = styled.div`
   gap: 82px;
   align-self: stretch;
   background: #000;
-`;
 
-const Heading1 = styled.h1`
-  /* h1 tag styles */
-`;
+  @media (min-width: 641px) and (max-width: 1007px) {
+    padding: 100px 0;
+  }
 
-const Paragraph = styled.p`
-  /* p tag styles */
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 80px 0;
+  }
+`;
+const TopContents = styled.div`
+  span {
+    font-family: "Neurial Grotesk", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76.882px;
+    letter-spacing: -2.097px;
+  }
+
+  span:nth-child(1) {
+    color: var(--White, #fff);
+    text-align: center;
+  }
+
+  span:nth-child(2) {
+    color: var(--electric-green-primary, #ebff25);
+  }
+
+  div {
+    color: var(--neutrals-grey-4, #e7e7ea);
+    text-align: center;
+    font-family: Neurial Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.849px; /* 136.873% */
+    margin-top: 20px;
+  }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    span {
+      font-size: 50px;
+      margin: auto;
+      text-align: center;
+      display: block;
+    }
+    div {
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    span {
+      font-size: 40px;
+      line-height: 50px;
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+    div {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 5px;
+    }
+  }
 `;
 
 const FlexBox = styled.div`
   display: flex;
-  width: 1140px;
-  height: 171px;
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(16, 16, 16, 0.4);
   backdrop-filter: blur(26.25px);
+  width : 70%;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    margin: 42px;
+    padding: 20px;
+    flex-direction: column;
+    width : 60%;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    margin: 22px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 50%;
+  }
 `;
 
 const DuoBox = styled.div`
-  /* Styling for the duo boxes */
+   display : flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding : 20px;
 `;
 
-const Heading3 = styled.h1`
+const Heading3 = styled.h2`
   color: var(--White, #fff);
   font-family: Neurial Grotesk;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin : 5px;
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 200px) and (max-width: 640px) {
+    font-size: 30px;
+  }
 `;
 
 const SubParagraph = styled.p`
@@ -53,37 +140,7 @@ const SubParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
-`;
-const FirstSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-`;
-
-const Title = styled.h2`
-  color: var(--electric-green-primary, #ebff25);
-  text-align: center;
-  font-family: Neurial Grotesk;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 76.882px; /* 106.78% */
-  letter-spacing: -2.097px;
-
-  span {
-    color: var(--White, #fff);
-  }
-`;
-const Description = styled.p`
-  color: var(--neutrals-grey-4, #e7e7ea);
-  text-align: center;
-  font-family: Neurial Grotesk;
-  font-size: 22.366px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32.849px;
-  margin-top: -50px;
+  margin : 5px;
 `;
 
 const Button = styled.button`
@@ -109,15 +166,11 @@ const Button = styled.button`
 const TradeTogether = () => {
   return (
     <OuterBox>
-      <FirstSection>
-        <Title>
-          {" "}
-          Earn Money. <span> The Easy Way.</span>
-        </Title>
-        <Description>
-          No Complexity of Trading Fee, generate volume and win
-        </Description>
-      </FirstSection>
+      <TopContents>
+        <span>Trade Together. </span>
+        <span>Thrive Together.</span>
+        <div> Join the fun-filled community on our platform.</div>
+      </TopContents>
       <FlexBox>
         <DuoBox>
           <Heading3>10,000+</Heading3>
