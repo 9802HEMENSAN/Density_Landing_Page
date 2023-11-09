@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const OutermostContainer = styled.div`
-  display: flex;
+  display: flex; 
   padding: 0px 216px;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +11,11 @@ const OutermostContainer = styled.div`
   align-self: stretch;
   background-color: #000;
   padding : 50px;
+  margin : auto;
 `;
 
 const StatisticsContainer = styled.div`
-  width : 90%;
+  width : 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

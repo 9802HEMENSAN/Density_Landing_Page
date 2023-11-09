@@ -109,7 +109,8 @@ const InnerDiv = styled.div`
   background: #d1cfcd;
   padding: 20px;
   min-width : 300px;
-  max-width : 500px; 
+  max-width : 500px;
+
 
   @media (min-width: 641px) and (max-width: 1007px) {
     height: auto;
@@ -121,7 +122,7 @@ const InnerDiv = styled.div`
     flex-direction: column;
     align-items: space-evenly;
     height: auto;
-    padding: 10px;  
+    padding: 40px 20px;  
     gap : 20px 10px;
   }
 `;
@@ -156,17 +157,16 @@ const BlockTitle = styled.h1`
 
 const Paragraph = styled.p`
   font-family: Neurial Grotesk;
-  font-size: 20px;
-  width: 85%;
+  font-size: 20px; 
   margin-top: -10px;
+  word-wrap : break-word;
 
   @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 18px;
   }
 
   @media (min-width: 200px) and (max-width: 640px) {
-    font-size: 18px;
-    padding : 20px 0px;
+    font-size: 18px; 
   }
 `;
 

@@ -16,6 +16,10 @@ const OuterContainer = styled.div`
   @media (min-width: 641px) and (max-width: 1007px) {
     padding: 100px 0;
   }
+
+  @media (min-width: 641px) and (max-width: 1007px) { 
+     padding : 200px 
+  }
 `;
 
 const GetStartedContainer = styled.div`
@@ -33,10 +37,11 @@ const Image = styled.img`
 
   @media (min-width: 641px) and (max-width: 1007px) {
     width : 100%;
+    
   }
 
   @media (min-width: 200px) and (max-width: 640px) {
-    width : 100%;
+    width : 100%; 
   }
 `;
 

@@ -27,14 +27,11 @@ const FirstSection = styled.div`
   align-items: center;
   gap: 28px;
 `;
-
-const SecondSection = styled.div`
-     
-`;
+ 
 
 const FlexBox = styled.div`
   display: flex;
-  width:  100%;
+  width:  80%;
   padding : 50px;
   justify-content: space-around;
   align-items: center;
@@ -142,8 +139,7 @@ const UnlockNewFrontiers = () => {
           Are you a stock trader looking for new opportunities to make <br />
           money? We got you covered!
         </Description>
-      </FirstSection>
-      <SecondSection>
+      </FirstSection> 
         <FlexBox>
           <FlexItem>
             Same <br /> Strategies
@@ -162,8 +158,7 @@ const UnlockNewFrontiers = () => {
             24x7 <br />
             Trading
           </FlexItem>
-        </FlexBox>
-      </SecondSection>
+        </FlexBox> 
 
       <Image src={graphical_data} alt="Description" />
     </OuterBox>
