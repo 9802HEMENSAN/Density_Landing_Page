@@ -35,12 +35,12 @@ const TextContainer = styled.div`
 
   @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 77px;
- 
+    
   }
 
   @media (min-width: 300px) and (max-width: 640px) {
     font-size: 44px;
-   
+    margin : 20px;
   }
 `;
 

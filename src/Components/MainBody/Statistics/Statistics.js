@@ -23,7 +23,7 @@ const StatisticsContainer = styled.div`
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 10px 0px rgba(235, 255, 37, 0.20);
   backdrop-filter: blur(26.25px);   
-  padding : 50px 50px;
+  padding : 0px 0px;
   margin : 100px 0px;
   gap : 20px;
 
@@ -51,8 +51,7 @@ const SingleData = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 10px 0px rgba(235, 255, 37, 0.2);
+  align-items: center; 
   gap: 4px;
   flex: 1 0 0;
   padding : 5%;

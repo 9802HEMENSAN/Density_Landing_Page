@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import codingNinja from "../../../../images/coding_ninja.jpg"
 // OuterBox component
 const OuterBox = styled.div`
   display: flex;
@@ -11,6 +11,9 @@ const OuterBox = styled.div`
   gap: 82px;
   align-self: stretch;
   background: #000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 25%, rgba(42, 93, 50, 0.40) 92.71%), url(${codingNinja}), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(26.25px);
 
   @media (min-width: 641px) and (max-width: 1007px) {
     padding: 100px 0;
@@ -89,6 +92,7 @@ const FlexBox = styled.div`
   background: rgba(16, 16, 16, 0.4);
   backdrop-filter: blur(26.25px);
   width : 70%;
+   
 
   @media (min-width: 641px) and (max-width: 1007px) {
     margin: 42px;

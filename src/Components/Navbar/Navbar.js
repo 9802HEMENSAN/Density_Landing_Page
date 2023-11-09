@@ -7,7 +7,7 @@ const NavbarContainer = styled.nav`
   display: flex;
   padding: 24px 216px;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   align-self: stretch;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -20,15 +20,15 @@ const NavbarContainer = styled.nav`
     gap: 10px;
   }
 
-    @media (min-width: 200px) and (max-width: 640px) {
-    padding: 24px 50px; 
+  @media (min-width: 200px) and (max-width: 640px) {
+    padding: 24px 50px;
   }
 `;
 
 const Logo = styled.img`
-    width: 99.953px;
-    height: 24px;
-`
+  width: 99.953px;
+  height: 24px;
+`;
 const Navbody = styled.div`
   min-width: 300px;
   width : 90%;
@@ -54,9 +54,9 @@ const Navbody = styled.div`
 const NavLinks = styled.ul`
   display: flex;
   list-style: none;
-  padding: 0; 
+  padding: 0;
 
-    @media (min-width: 200px) and (max-width: 640px) {
+  @media (min-width: 200px) and (max-width: 640px) {
     display: ${({ open }) => (open ? "flex" : "none")};
     position: absolute;
     top: 100%;
@@ -81,8 +81,6 @@ const NavLink = styled.li`
   @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 18px;
   }
-
-  
 `;
 
 const Hamburger = styled.div`
@@ -90,7 +88,7 @@ const Hamburger = styled.div`
   flex-direction: column;
   cursor: pointer;
 
- @media (min-width: 200px) and (max-width: 640px) {
+  @media (min-width: 200px) and (max-width: 640px) {
     display: flex;
   }
 
@@ -123,34 +121,34 @@ const Button = styled.button`
   background: linear-gradient(86deg, #d4f938 23.09%, #32d875 108.69%);
   box-shadow: 0px 0px 16px 0px rgba(168, 239, 156, 0.8);
   backdrop-filter: blur(5px);
-  margin : -10px 50px;
+  margin: -10px 50px;
 
   @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 16px;
     padding: 0 55px;
     height: 54px;
-    margin : -10px 30px; 
+    margin: -10px 30px;
   }
 
   @media (min-width: 200px) and (max-width: 640px) {
     font-size: 16px;
   }
 `;
+ 
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <NavbarContainer>
-
-      <Hamburger onClick={() => setOpen(!open)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </Hamburger>
+    <NavbarContainer> 
+        <Hamburger open={open} onClick={() => setOpen(!open)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </Hamburger> 
 
       <Navbody>
-         <Logo  src={Density_Logo} alt="Logo" />
+        <Logo src={Density_Logo} alt="Logo" />
         <NavLinks open={open}>
           <Link>
             <NavLink>Career</NavLink>
@@ -164,16 +162,13 @@ const Navbar = () => {
           <Link>
             <NavLink>Fees</NavLink>
           </Link>
-          <Link> 
-           <Button>Trade Now</Button>
-           </Link>
+          <Link>
+            <Button>Trade Now</Button>
+          </Link>
         </NavLinks>
-
       </Navbody>
     </NavbarContainer>
   );
 };
 
 export default Navbar;
-
-

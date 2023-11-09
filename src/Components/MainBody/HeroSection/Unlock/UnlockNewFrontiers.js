@@ -9,7 +9,7 @@ const OuterBox = styled.div`
   align-items: center;
   gap: 64px;
   align-self: stretch;
-  background-color: #000;
+  background-color: #000; 
 
   @media (min-width: 641px) and (max-width: 1007px) {
     padding: 200px 0;
@@ -29,12 +29,12 @@ const FirstSection = styled.div`
 `;
 
 const SecondSection = styled.div`
-  margin: auto;
+     
 `;
 
 const FlexBox = styled.div`
   display: flex;
-  width:  95%;
+  width:  100%;
   padding : 50px;
   justify-content: space-around;
   align-items: center;
